@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AmbulanceLandingActivity">
+
+    <Button
+        android:id="@+id/ambulance_map"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/availibility_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorThree"
+        android:elevation="24dp"
+        android:text="map"
+        tools:layout_editor_absoluteX="103dp"
+        tools:layout_editor_absoluteY="79dp" />
+
+    <Button
+        android:id="@+id/ambulance_logout"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/ambulance_profile_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorAccent"
+        android:elevation="24dp"
+        android:text="Logout" />
+
+    <Button
+        android:id="@+id/show_requests_btn"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="24dp"
+        android:text="show Requests" />
+
+    <Button
+        android:id="@+id/ambulance_profile_btn"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/show_requests_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorPrimary"
+        android:elevation="24dp"
+        android:text="profile"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <Button
+        android:id="@+id/availibility_btn"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/show_requests_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:elevation="24dp"
+        android:text="availability" />
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserLandingActivity">
+
+    <Button
+        android:id="@+id/map_btn"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/nearest_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorThree"
+        android:elevation="24dp"
+        android:text="Map" />
+
+    <Button
+        android:id="@+id/nearest_btn"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/user_emergency_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:elevation="24dp"
+        android:text="send request" />
+
+    <Button
+        android:id="@+id/user_logout_btn"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/user_profile_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:elevation="24dp"
+        android:text="Log out" />
+
+    <Button
+        android:id="@+id/user_profile_btn"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/user_emergency_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:elevation="24dp"
+        android:text="Profile" />
+
+    <Button
+        android:id="@+id/user_emergency_btn"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:background="@color/aaa"
+        android:elevation="24dp"
+        android:text="Emergency"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+</RelativeLayout>

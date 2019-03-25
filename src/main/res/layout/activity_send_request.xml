@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SendRequestActivity">
+
+    <EditText
+        android:id="@+id/sechno"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/getinfo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:hint="Enter Vehichle No To Get Info"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/driver_name"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/driver_mail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/driver_no"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/driver_mail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/getinfo"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/driver_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorPrimary"
+        android:elevation="24dp"
+        android:text="get info"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <Button
+        android:id="@+id/send_pick"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/driver_no"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorTwo"
+        android:elevation="24dp"
+        android:text="Send Pickup request"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <EditText
+        android:id="@+id/driver_mail"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:inputType="textPersonName" />
+</RelativeLayout>

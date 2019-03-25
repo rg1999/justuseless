@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfileActivity">
+
+    <EditText
+        android:id="@+id/oneuser_contact_no"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:hint="Contact No."
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/oneuser_email"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/oneuser_contact_no"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:hint="Email"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/oneuser_opt"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/oneuser_contact_no"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Opt. Contact No."
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/oneuser_name"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/oneuser_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/oneuser_permanent"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/oneuser_opt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Permanent Address"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/user_update_btn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/oneuser_permanent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:elevation="24dp"
+        android:text="update profile" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/oneuser_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="YOUR PROFILE DATA"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorTwo"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
